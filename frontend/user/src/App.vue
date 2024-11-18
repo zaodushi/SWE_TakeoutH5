@@ -1,23 +1,26 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Menu from './components/Menu.vue'
+import Cart from './components/Cart.vue'
 </script>
 
 <template>
-  <div>
-    <div>
-      <h1>我宣布个事，这里是用户点餐界面</h1>
-    </div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="app">
+    <Header />
+    <Menu />
+    <Cart />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+
+}
 .logo {
   height: 6em;
   padding: 1.5em;
