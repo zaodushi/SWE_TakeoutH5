@@ -1,11 +1,13 @@
 <!-- 菜单主体 -->
  <script setup lang="ts">
- 
+ import CategoryList from './CategoryList.vue'
+ import DishList from './DishList.vue'
  </script>
  
  <template>
     <div class="menu">
-        <div class="title">菜单 这里左边类别 右边是每道菜的信息</div>
+        <CategoryList />
+        <DishList />
     </div>
  </template>
  
@@ -14,6 +16,9 @@
         height: 70vh;
         width: 100vw;
         background-color: antiquewhite;
+        display: flex;
+        flex-direction: row;
+
     }
     .title {
         font-size: 50px;
